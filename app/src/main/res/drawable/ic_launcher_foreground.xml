@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Rounded Screen Frame -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M34,30 L74,30 C78.4,30 82,33.6 82,38 L82,70 C82,74.4 78.4,78 74,78 L34,78 C29.6,78 26,74.4 26,70 L26,38 C26,33.6 29.6,30 34,30 Z" />
+
+    <!-- Inner Glowing Activation Symbol (Lightning Bolt Style with rounded corners) -->
+    <path
+        android:fillColor="#FBC02D"
+        android:pathData="M58,38 L42,54 L52,54 L50,70 L66,54 L56,54 Z" />
+</vector>
