@@ -49,4 +49,4 @@ MIT License
 ## 🔗 链接
 
 - 开发者博客：[rongshangs.top](http://rongshangs.top)
-- 官网：[待部署]
+- 官网：[brightness.rongshangs.top](http://brightness.rongshangs.top)
