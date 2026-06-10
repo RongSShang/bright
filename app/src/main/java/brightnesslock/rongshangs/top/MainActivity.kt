@@ -1,6 +1,7 @@
 package brightnesslock.rongshangs.top
 
 import android.os.Bundle
+import android.os.Process
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import brightnesslock.rongshangs.top.util.BrightnessManager
@@ -13,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         // Check root first
         if (!ShellUtils.isRootAvailable()) {
             Toast.makeText(this, "戎：未检测到 Root 权限", Toast.LENGTH_LONG).show()
-            finish()
-            return
+            finishAndRemoveTask()
+            Process.killProcess(Process.myPid())
         }
 
         val currentState = BrightnessManager.getCurrentState()
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "戎：执行失败", Toast.LENGTH_SHORT).show()
         }
 
-        finish()
+        finishAndRemoveTask()
+        Process.killProcess(Process.myPid())
     }
 }
